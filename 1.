@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    system("chcp 65001");
+    cout << "Введите два числа и действие над ними через enter: \n";
+    float num1 = 0;
+    float num2 = 0;
+    char symbol = 0;
+    cin >> num1 >> num2 >> symbol;
+    switch(symbol){
+        case '+':
+            cout << num1 + num2 << endl;
+            break;
+        case '-':
+            cout << num1 - num2 << endl;
+            break;
+        case '*':
+            cout << num1 * num2 << endl;
+            break;
+        case '/':
+            cout << num1 / num2 << endl;
+            break;
+        default:
+            cout << "Я не знаю \n";
+            break;
+    }
+    return 0;
+}
