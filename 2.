@@ -1,0 +1,16 @@
+#include <iostream>
+#include "windows.h"
+using namespace std;
+
+int main() {
+    system("chcp 65001");
+    cout << "Введите n: \n";
+    int num = 0;
+    cin >> num;
+    while(num > 0){
+        cout << num << endl;
+        num--;
+        Sleep(1000);
+    }
+    return 0;
+}
